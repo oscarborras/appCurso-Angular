@@ -7,12 +7,19 @@ import { EjpropertybindingComponent } from './ejpropertybinding/ejpropertybindin
 import { EjeventbindingComponent } from './ejeventbinding/ejeventbinding.component';
 import { Ej2waybindingComponent } from './ej2waybinding/ej2waybinding.component';
 import { EjdirectivangifComponent } from './ejdirectivangif/ejdirectivangif.component';
+import { EjdirectivangstyleComponent } from './ejdirectivangstyle/ejdirectivangstyle.component';
+import { EjdirectivangclassComponent } from './ejdirectivangclass/ejdirectivangclass.component';
+import { EjdirectivangforComponent } from './ejdirectivangfor/ejdirectivangfor.component';
+import { ArrayobjetosComponent } from './arrayobjetos/arrayobjetos.component';
+import { EjdirectivangswitchComponent } from './ejdirectivangswitch/ejdirectivangswitch.component';
+import { EjmidirectivaComponent } from './ejmidirectiva/ejmidirectiva.component';
+import { PadreComponent } from './padre/padre.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CopyrightComponent,ViewmodeloComponent,EjmetodoComponent, EjpropertybindingComponent, EjeventbindingComponent,Ej2waybindingComponent, EjdirectivangifComponent],
+  imports: [RouterOutlet, CopyrightComponent,ViewmodeloComponent,EjmetodoComponent, EjpropertybindingComponent, EjeventbindingComponent,Ej2waybindingComponent, EjdirectivangifComponent,EjdirectivangstyleComponent,EjdirectivangclassComponent,EjdirectivangforComponent,ArrayobjetosComponent,EjdirectivangswitchComponent,EjmidirectivaComponent,PadreComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
