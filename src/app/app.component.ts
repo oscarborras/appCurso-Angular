@@ -14,12 +14,13 @@ import { ArrayobjetosComponent } from './arrayobjetos/arrayobjetos.component';
 import { EjdirectivangswitchComponent } from './ejdirectivangswitch/ejdirectivangswitch.component';
 import { EjmidirectivaComponent } from './ejmidirectiva/ejmidirectiva.component';
 import { PadreComponent } from './padre/padre.component';
+import { FechaactualComponent } from './fechaactual/fechaactual.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CopyrightComponent,ViewmodeloComponent,EjmetodoComponent, EjpropertybindingComponent, EjeventbindingComponent,Ej2waybindingComponent, EjdirectivangifComponent,EjdirectivangstyleComponent,EjdirectivangclassComponent,EjdirectivangforComponent,ArrayobjetosComponent,EjdirectivangswitchComponent,EjmidirectivaComponent,PadreComponent],
+  imports: [RouterOutlet, CopyrightComponent,ViewmodeloComponent,EjmetodoComponent, EjpropertybindingComponent, EjeventbindingComponent,Ej2waybindingComponent, EjdirectivangifComponent,EjdirectivangstyleComponent,EjdirectivangclassComponent,EjdirectivangforComponent,ArrayobjetosComponent,EjdirectivangswitchComponent,EjmidirectivaComponent,PadreComponent,FechaactualComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
