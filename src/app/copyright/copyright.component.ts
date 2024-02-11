@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { FechaactualComponent } from '../fechaactual/fechaactual.component';
-import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-copyright',
   standalone: true,
-  imports: [FechaactualComponent, DatePipe],
+  imports: [FechaactualComponent],
   templateUrl: './copyright.component.html',
   styleUrl: './copyright.component.css'
 })
