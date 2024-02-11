@@ -3,3 +3,15 @@
     <li *ngFor="let curso of cursos">  
         <h4>{{curso}}</h4></li>
 </ul>
+Versión for nueva
+<ul>
+    @for( curso of cursos; track curso ) {
+        <li><h4>{{curso}}</h4></li>
+    }
+</ul>
+Variables impricitas:
+<ul>
+    @for( curso of cursos; track curso; let i = $index; let first = $first; let last = $last; let even = $even; let odd = $odd ) {
+        <li>{{i}} {{first}} {{last}} {{even}} {{odd}}</li>
+    }
+</ul>
