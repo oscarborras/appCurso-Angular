@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
-import { CurrencyPipe, DatePipe, DecimalPipe, I18nSelectPipe, UpperCasePipe } from '@angular/common';
+import { CommonModule } from '@angular/common';
+//import { CurrencyPipe, DatePipe, DecimalPipe, I18nSelectPipe, UpperCasePipe } from '@angular/common';
 import { EuroPipe } from '../euro.pipe';
 
 
 @Component({
   selector: 'app-ejpipes',
   standalone: true,
-  imports: [DatePipe, UpperCasePipe,DecimalPipe,CurrencyPipe,I18nSelectPipe,EuroPipe],
+  //imports: [DatePipe, UpperCasePipe,DecimalPipe,CurrencyPipe,I18nSelectPipe,EuroPipe],
+  imports: [CommonModule, EuroPipe],
   templateUrl: './ejpipes.component.html',
   styleUrl: './ejpipes.component.css'
 })
