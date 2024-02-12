@@ -20,3 +20,32 @@
         </li>
     </ul>
 </div>
+<H3>Versión con &#64;switch:</H3>
+<div class="text-center">
+    <ul>
+        @for (jugador of jugadores; track jugador.nombre){
+            @switch (jugador.equipo){
+                @case ('L.A. Lakers'){
+                    <li class="lakers">
+                        <h3>{{jugador.nombre}}</h3>
+                        <h3 class="equipo"> {{jugador.equipo}} </h3>
+                    </li>    
+                }
+                
+                @case ('Boston Celtics'){
+                    <li class="celtics">
+                        <h3>{{jugador.nombre}}</h3>
+                        <h3 class="equipo"> {{jugador.equipo}} </h3>
+                    </li>          
+                }
+                
+                @case ('Chicago Bulls'){
+                    <li class="bulls">                
+                       <h3>{{jugador.nombre}}</h3>
+                        <h3 class="equipo"> {{jugador.equipo}} </h3>
+                    </li>
+                }
+            }
+        }
+    </ul>
+</div>

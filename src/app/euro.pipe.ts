@@ -11,7 +11,7 @@ export class EuroPipe implements PipeTransform {
   }*/
 
   transform(value: any, args?: any): any {
-    const euro = value + ' €';   (1)
-    return euro;         (2)
-}
+    const euro = value + ' €';
+    return euro;    
+  }
 }

@@ -16,12 +16,13 @@ import { EjdirectivangswitchComponent } from './ejdirectivangswitch/ejdirectivan
 import { EjmidirectivaComponent } from './ejmidirectiva/ejmidirectiva.component';
 import { PadreComponent } from './padre/padre.component';
 import { EjpipesComponent } from './ejpipes/ejpipes.component';
+import { ControlflowIfComponent } from './controlflow-if/controlflow-if.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FechaactualComponent,CopyrightComponent,ViewmodeloComponent,EjmetodoComponent, EjpropertybindingComponent, EjeventbindingComponent,Ej2waybindingComponent, EjdirectivangifComponent,EjdirectivangstyleComponent,EjdirectivangclassComponent,EjdirectivangforComponent,ArrayobjetosComponent,EjdirectivangswitchComponent,EjmidirectivaComponent,PadreComponent, EjpipesComponent],
+  imports: [RouterOutlet,ControlflowIfComponent,  FechaactualComponent,CopyrightComponent,ViewmodeloComponent,EjmetodoComponent, EjpropertybindingComponent, EjeventbindingComponent,Ej2waybindingComponent, EjdirectivangifComponent,EjdirectivangstyleComponent,EjdirectivangclassComponent,EjdirectivangforComponent,ArrayobjetosComponent,EjdirectivangswitchComponent,EjmidirectivaComponent,PadreComponent, EjpipesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
