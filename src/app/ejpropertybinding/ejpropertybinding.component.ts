@@ -14,6 +14,6 @@ export class EjpropertybindingComponent {
   constructor() {
        setTimeout(() => {
              this.texto = 'por favor';
-       }, 3000);
+       }, 2000);
   }
 }

@@ -9,5 +9,11 @@ import { Component } from '@angular/core';
 })
 
 export class InterpolacionComponent {
-  nombre: string = "Oscar"
+  texto: string = "Oscar"
+
+  constructor() {
+    setTimeout(() => {
+      this.texto = "Ana";
+    }, 2000);
+  }
 }

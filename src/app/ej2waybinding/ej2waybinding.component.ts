@@ -11,4 +11,8 @@ import { FormsModule } from '@angular/forms';
 })
 export class Ej2waybindingComponent {
   texto = 'Texto original al cargar';
+
+  modTexto() {
+    this.texto = 'Al pulsar el botón el texto se muestra así';
+  }
 }
