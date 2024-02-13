@@ -18,12 +18,13 @@ import { PadreComponent } from './padre/padre.component';
 import { EjpipesComponent } from './ejpipes/ejpipes.component';
 import { ControlflowIfComponent } from './controlflow-if/controlflow-if.component';
 import { InterpolacionComponent } from './interpolacion/interpolacion.component';
+import { EjngmodelComponent } from './ejngmodel/ejngmodel.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, InterpolacionComponent, ControlflowIfComponent,  FechaactualComponent,CopyrightComponent,ViewmodeloComponent,EjmetodoComponent, EjpropertybindingComponent, EjeventbindingComponent,Ej2waybindingComponent, EjdirectivangifComponent,EjdirectivangstyleComponent,EjdirectivangclassComponent,EjdirectivangforComponent,ArrayobjetosComponent,EjdirectivangswitchComponent,EjmidirectivaComponent,PadreComponent, EjpipesComponent],
+  imports: [RouterOutlet,EjngmodelComponent, InterpolacionComponent, ControlflowIfComponent,  FechaactualComponent,CopyrightComponent,ViewmodeloComponent,EjmetodoComponent, EjpropertybindingComponent, EjeventbindingComponent,Ej2waybindingComponent, EjdirectivangifComponent,EjdirectivangstyleComponent,EjdirectivangclassComponent,EjdirectivangforComponent,ArrayobjetosComponent,EjdirectivangswitchComponent,EjmidirectivaComponent,PadreComponent, EjpipesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

@@ -1,0 +1,56 @@
+<div>
+  <h4>Administración de artículos</h4>
+
+  @if (hayRegistros()){
+  <table class="table table-bordered table-striped tabla">
+    <thead>
+      <tr class="filters">
+        <td>Codigo</td>
+        <td>Descripcion</td>
+        <td>Precio</td>
+        <td>Borrar</td>
+        <td>Seleccionar</td>
+      </tr>
+    </thead>
+    <tbody>
+      @for (art of articulos; track art.codigo){
+      <tr>
+        <td>{{art.codigo}}</td>
+        <td>{{art.descripcion}}</td>
+        <td>{{art.precio}}</td>
+        <td><button class="btn btn-danger" (click)="borrar(art.codigo)">Borrar?</button></td>
+        <td><button class="btn btn-primary" (click)="seleccionar(art)">Seleccionar</button></td>
+      </tr>
+      }
+    </tbody>
+  </table>
+  } @else {
+  <p>No hay articulos.</p>
+  }
+  <br />
+  <div class="mb-3 row">
+    <label class="col-sm-2 col-form-label">Codigo:</label>
+    <div class="col-sm-10">
+      <input type="number" class="form-control" [(ngModel)]="art.codigo" />
+    </div>
+  </div>
+  <div class="mb-3 row">
+    <label class="col-sm-2 col-form-label">Descripción:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" [(ngModel)]="art.descripcion" />
+    </div>
+  </div>
+  <div class="mb-3 row">
+    <label class="col-sm-2 col-form-label">Precio:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" [(ngModel)]="art.precio" />
+    </div>
+  </div>
+
+  <div>
+    <p>
+      <button class="btn btn-primary" (click)="agregar()">Agregar</button>
+      <button class="btn btn-secondary" style="margin-left: 10px" (click)="modificar()">Modificar</button>
+    </p>
+  </div>
+</div>
